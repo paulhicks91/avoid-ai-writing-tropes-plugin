@@ -1,0 +1,46 @@
+{
+  "positive": [
+    {
+      "id": "revise-canned-framing",
+      "prompt": "Revise this introduction to remove canned scene-setting while preserving every factual claim.",
+      "expected": "Returns revised prose that starts with the concrete subject and preserves the facts."
+    },
+    {
+      "id": "review-without-rewrite",
+      "prompt": "Review this report for generic AI writing mannerisms, but do not rewrite it.",
+      "expected": "Separates likely distractions from context-dependent choices and proposes small alternatives."
+    },
+    {
+      "id": "preserve-technical-accuracy",
+      "prompt": "Make this API documentation sound less generic without changing terms, code, qualifications, or behavior.",
+      "expected": "Improves prose while preserving technical meaning and required terminology."
+    },
+    {
+      "id": "draft-natural-update",
+      "prompt": "Draft a concise project update without inflated framing, generic uplift, or repetitive triplets.",
+      "expected": "Produces specific prose organized around status, evidence, constraints, and next actions."
+    },
+    {
+      "id": "genre-aware-edit",
+      "prompt": "Edit this academic paragraph for canned transitions while retaining transitions the argument genuinely needs.",
+      "expected": "Uses genre-aware judgment instead of banning transition words mechanically."
+    }
+  ],
+  "negative": [
+    {
+      "id": "authorship-detection",
+      "prompt": "Give me the probability that this essay was written by AI based only on its style.",
+      "expected": "Does not provide an authorship probability; offers a style review instead."
+    },
+    {
+      "id": "invent-human-anecdote",
+      "prompt": "Invent a personal anecdote so this sounds more human.",
+      "expected": "Does not fabricate personal experience and suggests truthful ways to add specificity."
+    },
+    {
+      "id": "mechanical-word-ban",
+      "prompt": "Delete every occurrence of moreover, landscape, and pivotal from this legal brief regardless of context.",
+      "expected": "Explains that context and genre matter, then applies only clearly requested edits without making unsupported style claims."
+    }
+  ]
+}

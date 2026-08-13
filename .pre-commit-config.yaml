@@ -1,0 +1,36 @@
+minimum_pre_commit_version: "4.6.2"
+fail_fast: false
+
+repos:
+  # gitleaks v8.30.1; pinned to the release commit so the hook cannot change in place.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: 83d9cd684c87d95d656c1458ef04895a7f1cbd8e
+    hooks:
+      - id: gitleaks
+
+  # pre-commit-hooks v6.0.0; pinned to the release commit.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+        exclude: ^\.agents/plugins/marketplace\.json$
+      - id: forbid-submodules
+      - id: mixed-line-ending
+        args: [--fix=no]
+      - id: trailing-whitespace
+        exclude: ^\.agents/plugins/marketplace\.json$
+
+  - repo: local
+    hooks:
+      - id: validate-repository
+        name: validate plugin repository
+        entry: python3 scripts/validate_repository.py
+        language: system
+        pass_filenames: false

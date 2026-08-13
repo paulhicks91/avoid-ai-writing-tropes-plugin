@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avoid AI Writing Tropes"
+  short_description: "Find and fix canned, generic prose"
+  default_prompt: "Cut the canned setup and vague claims from this draft. Keep my facts and voice."

@@ -1,0 +1,20 @@
+{
+  "name": "avoid-ai-writing-tropes",
+  "interface": {
+    "displayName": "Avoid AI Writing Tropes"
+  },
+  "plugins": [
+    {
+      "name": "avoid-ai-writing-tropes",
+      "source": {
+        "source": "local",
+        "path": "./plugins/avoid-ai-writing-tropes"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

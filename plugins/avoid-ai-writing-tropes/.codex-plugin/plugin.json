@@ -1,0 +1,34 @@
+{
+  "name": "avoid-ai-writing-tropes",
+  "version": "0.1.1",
+  "description": "Find canned phrasing, vague claims, and repetitive patterns, then revise only what weakens the prose.",
+  "author": {
+    "name": "Paul Hicks",
+    "url": "https://github.com/paulhicks91"
+  },
+  "homepage": "https://github.com/paulhicks91/avoid-ai-writing-tropes-plugin",
+  "repository": "https://github.com/paulhicks91/avoid-ai-writing-tropes-plugin",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "style",
+    "ai-writing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Avoid AI Writing Tropes",
+    "shortDescription": "Find and fix canned, generic prose",
+    "longDescription": "Review or revise prose for canned openings, vague claims, forced transitions, repetitive patterns, and generic conclusions. Keep the writer's facts, voice, and genre intact. Never guess authorship from style.",
+    "developerName": "Paul Hicks",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Cut the canned setup and vague claims from this draft. Keep my facts and voice.",
+      "Show me where this prose sounds generic, but don't rewrite it yet.",
+      "Rewrite this in plain, specific language without flattening my style."
+    ]
+  }
+}
